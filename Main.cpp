@@ -25,9 +25,9 @@ int main () {
 			gg.GuessTheNumber(num);
 		}
 
-		if(gg.GuessTheNumber(num)==true) {
-			cout<<" Correct! The number is "<<gg.GetNum()<<"."<<endl;
-		}
+	if(gg.GuessTheNumber(num)==true) {
+		cout<<" Correct! The number is "<<gg.GetNum()<<"."<<endl;
+	}
 return 0;
 }
 
