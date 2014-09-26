@@ -19,11 +19,15 @@ int main () {
 	int num;
 	cin>>num;
 
-	if(gg.GuessTheNumber(num)==true) {
-		cout<<" Correct!"<<endl;
-	} else {
-		cout<<" Incorrect! The Correct Number is "<<gg.GetNum()<<endl;
-	}
+	while(gg.GuessTheNumber(num)!=true) {
+			cout<<" Incorrect!\nGuess again: ";
+			cin>>num;
+			gg.GuessTheNumber(num);
+		}
+
+		if(gg.GuessTheNumber(num)==true) {
+			cout<<" Correct! The number is "<<gg.GetNum()<<"."<<endl;
+		}
 return 0;
 }
 
